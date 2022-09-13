@@ -4,5 +4,14 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="user" class="com.spring.User" />
+    <bean id="book" class="com.spring.Book">
+        <property name="bname" value="C Language Grammar" />
+        <property name="bauther" value="Engineer" />
+    </bean>
+
+    <bean id="order" class="com.spring.Order">
+        <constructor-arg name="oname" value="computer" />
+        <constructor-arg name="address" value="China" />
+    </bean>
 
 </beans>
