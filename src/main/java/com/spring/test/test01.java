@@ -28,6 +28,12 @@ public class test01 {
         System.out.println(book2);
         book2.TestPrint();
 
+        System.out.println("=========================================");
+
+        Book book3 = context.getBean("book3", Book.class);
+        System.out.println(book3);
+        book3.TestPrint();
+
     }
 
 }
