@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <!--1 配置User对象创建 -->
     <bean id="user" class="com.spring.User" />
-    <bean id="book" class="com.spring.Book">
+
+    <!--2 set 方法注入属性 -->
+    <bean id="book1" class="com.spring.Book">
         <property name="bname" value="C Language Grammar" />
         <property name="bauther" value="Engineer" />
+        <property name="address"><null/></property>
     </bean>
 
+    <!-- xmlns:p="http://www.springframework.org/schema/p" p名称空间注入 -->
+    <bean id="book2" class="com.spring.Book" p:bname="C Language Grammar" p:bauther="Engineer" />
+
+    <!--3 有参构造注入属性 -->
     <bean id="order" class="com.spring.Order">
         <constructor-arg name="oname" value="computer" />
         <constructor-arg name="address" value="China" />

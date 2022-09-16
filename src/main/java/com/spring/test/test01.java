@@ -17,9 +17,16 @@ public class test01 {
     public void testAdd(){
 
         ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
-        Book book = context.getBean("book", Book.class);
-        System.out.println(book);
-        book.TestPrint();
+
+        Book book1 = context.getBean("book1", Book.class);
+        System.out.println(book1);
+        book1.TestPrint();
+
+        System.out.println("=========================================");
+
+        Book book2 = context.getBean("book2", Book.class);
+        System.out.println(book2);
+        book2.TestPrint();
 
     }
 

@@ -10,6 +10,7 @@ public class Book {
 
     private String bname;
     private String bauther;
+    private String address;
 
     public void setBname(String bname) {
         this.bname = bname;
@@ -18,7 +19,12 @@ public class Book {
     public void setBauther(String bauther) {
         this.bauther = bauther;
     }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     public void TestPrint(){
-        System.out.println("bname: " +bname + ":::" + "bauther: " + bauther);
+        System.out.println("bname: " +bname + ":::" + "bauther: " + bauther + ":::" + "address: " + address);
     }
 }
