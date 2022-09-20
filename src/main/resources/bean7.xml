@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 手动装配 -->
+    <bean id="emp1" class="com.spring.autowrite.Emp">
+        <property name="dept" ref="dept1"/>
+    </bean>
+    <bean id="dept1" class="com.spring.autowrite.Dept"/>
+
+    <!-- 自动装配 -->
+<!--    <bean id="emp2" class="com.spring.autowrite.Emp" autowire="byType"/>-->
+    <bean id="emp2" class="com.spring.autowrite.Emp" autowire="byName"/>
+    <!-- 自动装配 byName 要保持注入值id与属性名称一直 -->
+    <bean id="dept" class="com.spring.autowrite.Dept"/>
+
+
+</beans>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="myBean" class="com.spring.factorybean.MyBean"/>
+
+
+    <bean id="orders" class="com.spring.beanlifecycle.Orders" init-method="initMethod" destroy-method="destoryMethod">
+        <property name="name" value="mobile"/>
+    </bean>
+
+    <!-- 配置后置处理器 当前配置文件中的所有bean实例都会加载该后置处理器 -->
+    <bean id="myBeanPost" class="com.spring.beanlifecycle.MyBeanPost"/>
+
+</beans>
