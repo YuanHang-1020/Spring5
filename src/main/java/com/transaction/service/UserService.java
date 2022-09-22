@@ -18,17 +18,22 @@ public class UserService {
 
     public void accountMoney(){
 
-        // step 1
-        // step 2
-        // step 3
-        // step 4
+        try{
 
-        userDao.reduceMoney();
+            // step 1 开启事务
 
-        // 模拟异常
-        int i = 100 / 0;
+            // step 2 业务逻辑
+            userDao.reduceMoney();
+            // 模拟异常
+            // int i = 100 / 0;
+            userDao.addMoney();
 
-        userDao.addMoney();
+            // step 3 未发生异常，提交事务
+
+        }catch (Exception e){
+            // step 4 出现异常、事务回滚
+        }
+
     }
 
 }
