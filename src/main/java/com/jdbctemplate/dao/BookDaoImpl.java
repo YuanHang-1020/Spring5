@@ -1,10 +1,9 @@
-package com.jdbctemplate.test.dao;
+package com.jdbctemplate.dao;
 
-import com.jdbctemplate.test.entity.Book;
+import com.jdbctemplate.entity.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
 import java.util.Arrays;

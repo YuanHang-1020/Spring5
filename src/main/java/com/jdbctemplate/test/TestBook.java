@@ -1,7 +1,7 @@
-package com.jdbctemplate.test.test;
+package com.jdbctemplate.test;
 
-import com.jdbctemplate.test.entity.Book;
-import com.jdbctemplate.test.service.BookService;
+import com.jdbctemplate.entity.Book;
+import com.jdbctemplate.service.BookService;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

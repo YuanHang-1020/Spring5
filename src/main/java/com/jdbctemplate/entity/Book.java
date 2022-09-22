@@ -1,4 +1,4 @@
-package com.jdbctemplate.test.entity;
+package com.jdbctemplate.entity;
 
 /**
  * @Author hang.yuan

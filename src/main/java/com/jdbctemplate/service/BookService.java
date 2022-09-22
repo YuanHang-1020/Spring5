@@ -1,8 +1,8 @@
-package com.jdbctemplate.test.service;
+package com.jdbctemplate.service;
 
 
-import com.jdbctemplate.test.dao.BookDao;
-import com.jdbctemplate.test.entity.Book;
+import com.jdbctemplate.dao.BookDao;
+import com.jdbctemplate.entity.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

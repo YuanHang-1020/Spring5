@@ -1,6 +1,6 @@
-package com.jdbctemplate.test.dao;
+package com.jdbctemplate.dao;
 
-import com.jdbctemplate.test.entity.Book;
+import com.jdbctemplate.entity.Book;
 
 import java.util.List;
 
