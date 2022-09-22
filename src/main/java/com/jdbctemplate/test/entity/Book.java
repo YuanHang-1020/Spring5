@@ -10,7 +10,7 @@ public class Book {
 
     private String userId;
     private String username;
-    private String uststus;
+    private String ustatus;
 
     public String getUserId() {
         return userId;
@@ -29,10 +29,19 @@ public class Book {
     }
 
     public String getUststus() {
-        return uststus;
+        return ustatus;
     }
 
-    public void setUststus(String uststus) {
-        this.uststus = uststus;
+    public void setUstatus(String ustatus) {
+        this.ustatus = ustatus;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "userId='" + userId + '\'' +
+                ", username='" + username + '\'' +
+                ", ustatus='" + ustatus + '\'' +
+                '}';
     }
 }
