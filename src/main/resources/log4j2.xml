@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 日志级别： OFF > FATAL > ERROR > WARN > INFO > DEBUG > TRACE > ALL -->
+
+<!-- configuration的status用于设置log4j2自身内部的信息输出， 可以不设置， 如果设置 trace ，可以看到各种详细输出 -->
+<configuration status="INFO">
+
+    <appenders>
+        <console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </console>
+    </appenders>
+
+    <loggers>
+        <root level="info">
+            <!-- 这儿为trace表示什么都可以打印出来了,其他几个级别分别为：TRACE、DEBUG、INFO、WARN、ERROR和FATAL -->
+            <appender-ref ref="Console"/>
+        </root>
+    </loggers>
+
+
+
+</configuration>
